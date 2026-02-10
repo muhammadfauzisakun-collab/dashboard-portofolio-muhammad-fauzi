@@ -1,0 +1,764 @@
+/* Reset dan Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #FFF;
+    line-height: 30px;
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+.container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+/* HEADER */
+header {
+    background: rgba(44, 24, 16, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: center;
+    z-index: 100;
+    padding: 0px ;
+    backdrop-filter: blur(5px); /* Efek blur untuk kesan mewah */
+}
+header .logo {
+    background-color: #000;
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+    color: #ffffff;
+    font-size: 20px;
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+    margin: 0px;
+
+}
+header .nav-ul {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    list-style: none;
+    padding: 5px;
+}
+
+.nav-h1 {
+    color: #ffffff;
+    text-decoration-style: none;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.container-nav {
+
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    padding: 0%;   
+    margin-left: 30%;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+    margin-left: 70px;
+    padding-left: 30%;
+    font-size: 20px;
+}
+header nav ul li a:hover {
+    color: #D4AF37;
+    transform: translateY(-2px);
+}
+/* HEADER END */
+
+
+
+/* HERO */
+.container-hero {
+    margin-top: 60px; /* Sesuaikan dengan tinggi header */
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 300px;
+    white-space: nowrap;
+}   
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #D4AF37;
+    animation: fadeInUp 2s ease-out;
+}
+.hero p {
+
+    font-size: 35px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    animation: fadeInUp 2s ease-out 0.5s both;
+}
+.btn {
+    background: linear-gradient(45deg, #D4AF37, #FFF);
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.5);
+}
+
+/* About */
+.container {
+    color: #ffffff;
+    max-width: 100%;
+    margin: 0px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.about h2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: #D4AF37;
+}
+.about p {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 2;
+    text-indent: 50px;
+}
+.about {
+    padding: 120px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #000, #2C1810);
+}
+.about img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    margin: 0px 0;
+    border: 2px solid #D4AF37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.stat {
+    font-size: 20px;
+    color: #D4AF37;
+}
+.stat span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio .container {
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: #ffffff;
+}
+.filters {
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+.filter-btn {
+    background: #2C1810;
+    color: #FFF;
+    border: 2px solid #D4AF37;
+    padding: 10px 30px;
+    margin: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.filter-btn.active, .filter-btn:hover {
+    background: #D4AF37;
+    color: #000;
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery .item {
+    position: relative;
+    width: 30%;
+    margin: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.gallery .item img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+.gallery .item:hover {
+    transform: translateY(-10px);
+}
+.gallery .item:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    padding: 15px;
+    color: #D4AF37;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.gallery .item:hover .overlay {
+    opacity: 1;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    z-index: 1000;
+    text-align: center;
+    padding-top: 50px;
+}
+.lightbox img {
+    max-width: 80%;
+    max-height: 70%;
+}
+.lightbox p {
+    color: #D4AF37;
+    margin-top: 20px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #FFF;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/* Skills */
+.skills {
+    padding: 120px 0;
+    text-align: center;
+    background: #2C1810;
+}
+.skill {
+    margin: 40px;
+    position: relative;
+}
+.progress-bar {
+    background: #000000;
+    height: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.progress {
+    background: linear-gradient(90deg, #D4AF37, #FFF);
+    height: 100%;
+    width: 0;
+    transition: width 2s ease-out;
+}
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D4AF37;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.skill:hover .tooltip {
+    display: block;
+}
+
+
+/* Testimonials */
+.testimonials {
+    padding: 120px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #370606, #34211a);
+}
+.testimonials h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    color: #ffd900;
+}
+
+.testimonials p {
+    font-size: 45px;
+    font-style: italic;
+    padding-bottom: 2px;
+    padding-top: 8px;
+    text-align: center;
+    line-height: 1.2;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.testimonials h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.testimonial {
+    display: none;
+    padding: 20px;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.testimonial.active {
+    display: block;
+}
+.slider-controls {
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.slider-controls button {
+    background: #D4AF37;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.slider-controls button:hover {
+    background: #FFF;
+}
+
+
+/* Contact */
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #2C1810;
+}
+.contact h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #D4AF37;
+}
+.contact form {
+    max-width: 1000px 100%;
+    height: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.contact input, .contact textarea {
+    margin-left: 25%;
+    width: 50%;
+    height: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #D4AF37;
+    border-radius: 5px;
+    font-size: 18px;
+    
+} 
+
+.contact textarea {
+    height: 150px;
+    resize: vertical;
+    padding: 150px;
+    padding-left: 10px;
+    justify-content: center;
+    
+}
+.contact button {
+    background: #D4AF37;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: block;
+    margin: 0 auto;
+}
+.contact button:hover {
+    
+    background: #B8860B;
+    transform: translateY(-2px);
+}
+.contact button:active {
+    transform: translateY(0);
+}
+
+.contact button:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.contact .success-message {
+    color: #D4AF37;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+}
+.contact .error-message {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact .spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}   
+
+.contact .spinner.active {
+    display: inline-block;
+}   
+
+.contact button {
+    font-weight: 400;
+    cursor: pointer;
+}   
+
+.contact .btn-contact {
+    background: #D4AF37;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .btn-contact:hover {
+    background: #B8860B;
+    transform: translateY(-2px);
+}
+
+.contact .btn-contact:active {
+    transform: translateY(0);
+}
+
+.contact .btn-contact:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.contact .spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+.contact .spinner.active {
+    display: inline-block;
+}
+
+.contact button {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.contact-info {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+}
+
+
+
+/* Footer */
+.footer {
+    background: rgba(44, 24, 16, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    color: #FFF;
+    margin-top: 0px;
+    backdrop-filter: blur(5px); /* Efek blur untuk kesan mewah */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.social-links a {
+    color: #D4AF37;
+    text-decoration: none;   
+    font-size: 20px;
+    margin-left: 20px;        
+    display: inline-block;
+    transition: 0.3s;       
+}
+
+.social-links a:hover {
+    color: #ffffff;           
+    opacity: 0.8;
+    }
+
+@media (max-width: 768px) {
+.footer-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    }
+.social-links a {
+    margin: 0 10px;
+        }
+    }
+}
+.footer .social-links a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.footer .social-links {
+    margin-top: 10px;
+}
+/* Login Page Styles */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #2C1810;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    text-align: center;
+}
+.login-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #D4AF37;
+}
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+}
+.login-form input:focus {
+    outline: none;
+    border-color: #B8860B;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+.login-form button {
+    width: 100%;
+    padding: 15px;
+    background: #D4AF37;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.login-form button:hover {
+    background: #B8860B;
+    transform: translateY(-2px);
+}
+.login-form button:active {
+    transform: translateY(0);
+}
+.login-form .forgot-password {
+    margin-top: 15px;
+}
+.login-form .forgot-password a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.login-form .forgot-password a:hover {
+    text-decoration: underline;
+}
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.input-group input:focus {
+    outline: none;
+    border-color: #B8860B;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+.input-group input::placeholder {
+    color: #ccc;
+}
+.error-text {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.remember-me input {
+    margin-right: 10px;
+}
+
+.remember-me label {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.login-form p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.login-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
